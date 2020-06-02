@@ -111,6 +111,40 @@ HEADER
 }
 
 
+/*RESPONSIVE HEADER*/
+
+
+/*  469px  -  768px*/
+
+@media (max-width:768px) {
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+    .barra-navegacion {
+        height: auto;
+    }
+    .contenedor-navegacion {
+        flex-direction: column;
+    }
+    .logo {
+        justify-content: center;
+    }
+}
+
+
+/* 0 - 468px*/
+
+@media (max-width:468px) {
+    .menu {
+        flex-direction: column;
+    }
+    .item a {
+        height: 35px;
+    }
+}
+
+
 /****CUERPO DE LA PAGINA****/
 
 h1 {
