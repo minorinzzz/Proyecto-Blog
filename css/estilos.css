@@ -118,6 +118,7 @@ HEADER
 
 @media (max-width:768px) {
     .header {
+        background-color: var(--fondobarra);
         width: 100%;
         padding: 0;
     }
@@ -136,6 +137,9 @@ HEADER
 /* 0 - 468px*/
 
 @media (max-width:468px) {
+    .header {
+        background-color: var(--fondobarra);
+    }
     .menu {
         flex-direction: column;
     }
@@ -274,6 +278,73 @@ input[type="password"] {
     background-color: var(--colortitulo);
     height: 40px;
     width: 100%;
+}
+
+
+/*RESPONSIVO CUERPO DE LA PAGINA*/
+
+
+/*    769   -   992   */
+
+@media (max-width:992px) {
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+    .articulos {
+        width: 65%;
+    }
+    .posts {
+        width: 35%;
+    }
+    .post {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .formulario {
+        margin-right: 0;
+        width: 80%;
+    }
+}
+
+
+/*   481    -  768   */
+
+@media (max-width:768px) {
+    .contenido {
+        flex-direction: column;
+    }
+    .articulos {
+        width: 100%;
+    }
+    .posts {
+        width: 100%;
+    }
+    .post {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .formulario {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+}
+
+
+/*   0  -   480    */
+
+@media (max-width:480px) {
+    .articulo p {
+        text-align: justify;
+    }
+    .articulo img {
+        width: 100%;
+    }
+    .boton {
+        width: 100%;
+    }
 }
 
 
